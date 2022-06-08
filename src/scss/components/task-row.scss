@@ -1,0 +1,42 @@
+@import '../variables';
+
+.task-row {
+  width: 100%;
+
+  &--header {
+    &__pending {
+      &.MuiAvatar-circular {
+        background-color: $primary-color;
+      }
+    }
+
+    &__resolved {
+      &.MuiAvatar-circular {
+        background-color: $secondary-color;
+      }
+    }
+  }
+
+  &--content {
+    &__title,
+    &__description {
+      word-wrap: break-word;
+      word-break: break-word;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 15px 0;
+    }
+
+    &__title {
+      max-height: 30px;
+
+      &.MuiTypography-root {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__description {
+      max-height: 100px;
+    }
+  }
+}

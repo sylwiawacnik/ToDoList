@@ -1,0 +1,33 @@
+@import '../variables';
+
+.task-box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  margin-bottom: 50px;
+
+  &__id {
+    color: $primary-color;
+    margin-bottom: 30px;
+  }
+
+  &__status {
+    align-self: end;
+  }
+
+  &__title,
+  &__description {
+    margin-bottom: 30px;
+
+    &--label {
+      margin: 30px;
+      font-weight: bold;
+    }
+  }
+
+  button {
+    width: 100px;
+    align-self: end;
+    margin: 20px 0;
+  }
+}

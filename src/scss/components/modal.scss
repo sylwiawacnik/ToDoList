@@ -1,0 +1,16 @@
+@import '../variables';
+
+.dialog {
+
+  &__title {
+    text-align: center;
+    color: $primary-color;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    gap: 20px;
+  }
+}
